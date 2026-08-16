@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Large/generated artifacts you may not want to commit
+# (uncomment if you'd rather regenerate than store in git)
+# database/ecommerce.db
+# data/raw/*.csv
+# data/processed/*.csv
