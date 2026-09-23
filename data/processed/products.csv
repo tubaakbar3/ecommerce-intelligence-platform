@@ -1,0 +1,261 @@
+product_id,product_name,category,subcategory,brand,supplier,cost,selling_price,launch_date
+PROD1000,Classic Beauty Tool 175,Beauty,Beauty Tools,Meadowlane,Supplier_039,24.33,54.6,2023-04-18
+PROD1001,Portable Smart Home 131,Electronics,Smart Home,UrbanEdge,Supplier_005,64.36,89.0,2025-10-04
+PROD1002,Portable Bag 414,Accessories,Bags,Northstead,Supplier_024,10.77,21.73,2024-08-24
+PROD1003,Portable Outerwear 410,Fashion,Outerwear,Lumio,Supplier_040,51.62,88.29,2025-08-03
+PROD1004,Signature Tech Accessorie 946,Accessories,Tech Accessories,UrbanEdge,Supplier_024,31.95,58.14,2025-06-10
+PROD1005,Everyday Home Decor 739,Home & Kitchen,Home Decor,Lumio,Supplier_017,40.78,64.66,2025-02-09
+PROD1006,Classic Smart Home 208,Electronics,Smart Home,UrbanEdge,Supplier_005,134.61,180.83,2023-03-11
+PROD1007,Everyday Outdoor Equipment 965,Sports & Outdoors,Outdoor Equipment,TrueForm,Supplier_002,155.39,260.61,2023-01-28
+PROD1008,Premium Small Appliance 729,Home & Kitchen,Small Appliances,Everly,Supplier_017,85.71,150.9,2023-04-18
+PROD1009,Premium Footwear 346,Fashion,Footwear,Meadowlane,Supplier_023,67.67,121.39,2023-04-12
+PROD1010,Classic Bag 679,Accessories,Bags,TrueForm,Supplier_012,13.23,24.74,2025-02-07
+PROD1011,Deluxe Athletic Wear 544,Sports & Outdoors,Athletic Wear,Northstead,Supplier_026,132.8,213.7,2023-05-16
+PROD1012,Classic Chargers & Cable 841,Electronics,Chargers & Cables,Everly,Supplier_031,144.61,214.85,2025-04-01
+PROD1013,Smart Haircare 648,Beauty,Haircare,UrbanEdge,Supplier_017,34.57,86.11,2024-05-20
+PROD1014,Signature Beauty Tool 688,Beauty,Beauty Tools,Verona Basics,Supplier_030,17.38,46.51,2024-11-17
+PROD1015,Ultra Fitness Gear 680,Sports & Outdoors,Fitness Gear,Verona Basics,Supplier_038,78.84,118.79,2024-07-26
+PROD1016,Compact Fragrance 847,Beauty,Fragrance,Verona Basics,Supplier_030,7.96,16.39,2024-10-27
+PROD1017,Signature Small Appliance 275,Home & Kitchen,Small Appliances,Verona Basics,Supplier_030,49.29,85.76,2023-02-12
+PROD1018,Essential Chargers & Cable 653,Electronics,Chargers & Cables,Craftly,Supplier_040,225.91,286.49,2024-02-24
+PROD1019,Pro Apparel 988,Fashion,Apparel,Meadowlane,Supplier_023,71.39,132.53,2024-12-01
+PROD1020,Essential Outerwear 971,Fashion,Outerwear,Everly,Supplier_003,40.09,70.97,2025-04-15
+PROD1021,Smart Beauty Tool 928,Beauty,Beauty Tools,Everly,Supplier_023,36.18,78.92,2024-08-11
+PROD1022,Smart Haircare 416,Beauty,Haircare,Pulse,Supplier_037,13.27,29.86,2023-07-10
+PROD1023,Classic Storage & Organization 278,Home & Kitchen,Storage & Organization,Craftly,Supplier_038,55.88,101.06,2024-06-17
+PROD1024,Pro Home Decor 220,Home & Kitchen,Home Decor,Meadowlane,Supplier_008,88.43,160.73,2024-03-03
+PROD1025,Compact Smart Home 525,Electronics,Smart Home,Everly,Supplier_006,166.48,228.16,2023-05-10
+PROD1026,Essential Athletic Wear 314,Sports & Outdoors,Athletic Wear,Meadowlane,Supplier_038,14.56,23.52,2023-12-14
+PROD1027,Smart Athletic Wear 481,Sports & Outdoors,Athletic Wear,Lumio,Supplier_003,102.37,149.16,2023-08-28
+PROD1028,Essential Small Appliance 593,Home & Kitchen,Small Appliances,Pulse,Supplier_039,69.72,126.14,2025-01-01
+PROD1029,Premium Bag 364,Accessories,Bags,TrueForm,Supplier_027,39.89,83.11,2023-03-22
+PROD1030,Essential Apparel 117,Fashion,Apparel,Craftly,Supplier_019,36.16,60.2,2024-10-26
+PROD1031,Everyday Chargers & Cable 364,Electronics,Chargers & Cables,Novalux,Supplier_008,43.2,61.68,2024-03-13
+PROD1032,Ultra Storage & Organization 699,Home & Kitchen,Storage & Organization,Solstice,Supplier_001,14.34,28.09,2024-10-20
+PROD1033,Compact Smart Home 815,Electronics,Smart Home,Craftly,Supplier_023,136.62,185.77,2024-12-19
+PROD1034,Essential Fitness Gear 474,Sports & Outdoors,Fitness Gear,Lumio,Supplier_038,27.87,47.1,2024-10-21
+PROD1035,Portable Apparel 947,Fashion,Apparel,Craftly,Supplier_038,33.04,51.36,2024-10-18
+PROD1036,Pro Bag 161,Accessories,Bags,Pulse,Supplier_011,43.2,73.55,2024-06-07
+PROD1037,Modern Chargers & Cable 822,Electronics,Chargers & Cables,Northstead,Supplier_014,96.58,121.73,2025-04-29
+PROD1038,Signature Cookware 167,Home & Kitchen,Cookware,Everly,Supplier_014,48.75,77.16,2025-01-23
+PROD1039,Smart Fitness Gear 700,Sports & Outdoors,Fitness Gear,Northstead,Supplier_011,91.42,138.43,2023-08-31
+PROD1040,Everyday Outerwear 997,Fashion,Outerwear,Solstice,Supplier_019,67.19,109.44,2023-11-30
+PROD1041,Premium Fitness Gear 873,Sports & Outdoors,Fitness Gear,Meadowlane,Supplier_021,194.03,296.46,2025-11-02
+PROD1042,Smart Home Decor 222,Home & Kitchen,Home Decor,Solstice,Supplier_021,11.14,21.16,2024-10-17
+PROD1043,Smart Outerwear 468,Fashion,Outerwear,Lumio,Supplier_034,18.66,27.72,2023-04-30
+PROD1044,Portable Home Decor 715,Home & Kitchen,Home Decor,UrbanEdge,Supplier_013,80.66,140.87,2023-08-10
+PROD1045,Modern Haircare 417,Beauty,Haircare,UrbanEdge,Supplier_003,37.71,78.32,2023-03-23
+PROD1046,Classic Bag 395,Accessories,Bags,UrbanEdge,Supplier_027,42.46,100.8,2025-02-26
+PROD1047,Everyday Jewelry & Watche 213,Accessories,Jewelry & Watches,Northstead,Supplier_018,8.13,15.44,2024-10-09
+PROD1048,Modern Tech Accessorie 291,Accessories,Tech Accessories,Craftly,Supplier_038,55.14,97.36,2023-10-06
+PROD1049,Modern Outerwear 777,Fashion,Outerwear,Craftly,Supplier_003,37.0,54.38,2024-08-02
+PROD1050,Deluxe Small Gadget 835,Electronics,Small Gadgets,Kindra,Supplier_004,102.33,159.48,2025-01-22
+PROD1051,Modern Fitness Gear 415,Sports & Outdoors,Fitness Gear,UrbanEdge,Supplier_007,71.48,111.06,2023-12-17
+PROD1052,Everyday Small Gadget 836,Electronics,Small Gadgets,Kindra,Supplier_017,99.57,122.41,2023-03-27
+PROD1053,Ultra Skincare 405,Beauty,Skincare,Meadowlane,Supplier_030,25.13,53.55,2024-02-11
+PROD1054,Premium Skincare 750,Beauty,Skincare,Everly,Supplier_036,4.71,11.68,2023-03-24
+PROD1055,Classic Small Appliance 138,Home & Kitchen,Small Appliances,UrbanEdge,Supplier_029,39.3,71.81,2023-06-25
+PROD1056,Compact Haircare 489,Beauty,Haircare,Solstice,Supplier_011,24.75,65.67,2025-06-24
+PROD1057,Signature Chargers & Cable 801,Electronics,Chargers & Cables,Craftly,Supplier_010,34.17,47.42,2024-07-09
+PROD1058,Portable Small Appliance 679,Home & Kitchen,Small Appliances,Everly,Supplier_040,33.92,61.33,2025-03-25
+PROD1059,Smart Footwear 925,Fashion,Footwear,Northstead,Supplier_005,24.43,38.65,2023-04-30
+PROD1060,Compact Fitness Gear 449,Sports & Outdoors,Fitness Gear,Northstead,Supplier_020,21.99,33.31,2023-03-28
+PROD1061,Modern Jewelry & Watche 566,Accessories,Jewelry & Watches,Kindra,Supplier_024,10.69,16.45,2023-04-18
+PROD1062,Premium Bag 406,Accessories,Bags,Solstice,Supplier_010,25.39,48.26,2025-02-05
+PROD1063,Everyday Outdoor Equipment 630,Sports & Outdoors,Outdoor Equipment,UrbanEdge,Supplier_024,69.61,108.53,2024-09-03
+PROD1064,Compact Outerwear 250,Fashion,Outerwear,TrueForm,Supplier_014,33.08,53.79,2025-02-01
+PROD1065,Classic Skincare 262,Beauty,Skincare,Meadowlane,Supplier_005,26.46,66.51,2023-07-31
+PROD1066,Portable Home Decor 835,Home & Kitchen,Home Decor,Northstead,Supplier_015,89.76,138.09,2023-03-22
+PROD1067,Premium Beauty Tool 739,Beauty,Beauty Tools,Meadowlane,Supplier_036,33.06,71.76,2024-06-28
+PROD1068,Everyday Skincare 751,Beauty,Skincare,TrueForm,Supplier_010,32.5,72.86,2025-09-06
+PROD1069,Premium Apparel 810,Fashion,Apparel,Meadowlane,Supplier_009,17.21,30.25,2025-05-09
+PROD1070,Compact Bag 529,Accessories,Bags,UrbanEdge,Supplier_020,48.84,87.92,2023-05-12
+PROD1071,Classic Headphone 178,Electronics,Headphones,Meadowlane,Supplier_010,120.46,166.35,2023-09-10
+PROD1072,Ultra Tech Accessorie 467,Accessories,Tech Accessories,UrbanEdge,Supplier_007,23.13,37.9,2023-05-23
+PROD1073,Portable Fragrance 176,Beauty,Fragrance,Verona Basics,Supplier_011,5.91,13.14,2024-01-09
+PROD1074,Modern Skincare 556,Beauty,Skincare,Solstice,Supplier_021,34.56,84.18,2025-01-28
+PROD1075,Modern Small Gadget 230,Electronics,Small Gadgets,Lumio,Supplier_005,43.8,60.21,2024-03-03
+PROD1076,Deluxe Storage & Organization 439,Home & Kitchen,Storage & Organization,Novalux,Supplier_024,101.38,166.97,2025-05-24
+PROD1077,Modern Outdoor Equipment 676,Sports & Outdoors,Outdoor Equipment,TrueForm,Supplier_003,92.74,132.84,2024-11-04
+PROD1078,Classic Apparel 549,Fashion,Apparel,Lumio,Supplier_036,75.08,122.53,2023-01-02
+PROD1079,Ultra Athletic Wear 137,Sports & Outdoors,Athletic Wear,Everly,Supplier_030,135.8,207.51,2025-09-11
+PROD1080,Portable Beauty Tool 605,Beauty,Beauty Tools,Lumio,Supplier_020,32.53,84.99,2024-04-11
+PROD1081,Ultra Fitness Gear 854,Sports & Outdoors,Fitness Gear,Everly,Supplier_011,116.67,180.31,2024-08-22
+PROD1082,Essential Headphone 985,Electronics,Headphones,Pulse,Supplier_037,141.83,206.84,2025-07-01
+PROD1083,Ultra Small Appliance 373,Home & Kitchen,Small Appliances,Everly,Supplier_012,9.04,15.68,2023-06-11
+PROD1084,Compact Storage & Organization 598,Home & Kitchen,Storage & Organization,Lumio,Supplier_024,46.44,98.18,2024-10-03
+PROD1085,Modern Tech Accessorie 391,Accessories,Tech Accessories,Solstice,Supplier_027,40.21,73.03,2025-01-04
+PROD1086,Portable Haircare 849,Beauty,Haircare,Solstice,Supplier_009,13.9,30.43,2023-01-22
+PROD1087,Classic Smart Home 838,Electronics,Smart Home,TrueForm,Supplier_007,123.62,150.99,2024-01-23
+PROD1088,Ultra Beauty Tool 866,Beauty,Beauty Tools,Solstice,Supplier_028,33.33,74.28,2024-11-20
+PROD1089,Deluxe Home Decor 135,Home & Kitchen,Home Decor,Kindra,Supplier_024,85.65,170.93,2025-09-22
+PROD1090,Signature Outerwear 476,Fashion,Outerwear,Craftly,Supplier_038,86.87,149.74,2025-03-05
+PROD1091,Pro Small Gadget 883,Electronics,Small Gadgets,Novalux,Supplier_026,154.31,208.22,2023-10-10
+PROD1092,Premium Fitness Gear 613,Sports & Outdoors,Fitness Gear,Northstead,Supplier_015,65.71,103.45,2024-09-09
+PROD1093,Premium Athletic Wear 707,Sports & Outdoors,Athletic Wear,Craftly,Supplier_017,144.05,202.57,2024-07-09
+PROD1094,Ultra Bag 868,Accessories,Bags,Craftly,Supplier_014,11.56,19.08,2025-10-07
+PROD1095,Portable Outdoor Equipment 265,Sports & Outdoors,Outdoor Equipment,Kindra,Supplier_019,66.98,110.92,2023-12-07
+PROD1096,Premium Cookware 893,Home & Kitchen,Cookware,TrueForm,Supplier_025,71.44,123.0,2023-09-11
+PROD1097,Ultra Beauty Tool 516,Beauty,Beauty Tools,Northstead,Supplier_013,5.95,14.11,2024-12-15
+PROD1098,Portable Skincare 149,Beauty,Skincare,Solstice,Supplier_005,15.42,36.0,2025-11-17
+PROD1099,Premium Footwear 173,Fashion,Footwear,Solstice,Supplier_014,50.78,86.14,2024-05-01
+PROD1100,Classic Bag 940,Accessories,Bags,Northstead,Supplier_003,52.29,94.41,2023-03-02
+PROD1101,Modern Outdoor Equipment 311,Sports & Outdoors,Outdoor Equipment,UrbanEdge,Supplier_029,171.72,249.58,2025-08-09
+PROD1102,Signature Storage & Organization 445,Home & Kitchen,Storage & Organization,UrbanEdge,Supplier_033,120.07,204.96,2024-05-08
+PROD1103,Modern Storage & Organization 812,Home & Kitchen,Storage & Organization,Lumio,Supplier_029,94.87,168.41,2023-04-07
+PROD1104,Modern Skincare 560,Beauty,Skincare,Verona Basics,Supplier_040,18.9,37.88,2024-05-17
+PROD1105,Classic Smart Home 956,Electronics,Smart Home,Meadowlane,Supplier_026,63.34,86.33,2024-08-20
+PROD1106,Essential Athletic Wear 799,Sports & Outdoors,Athletic Wear,TrueForm,Supplier_024,37.68,68.34,2024-03-09
+PROD1107,Ultra Footwear 277,Fashion,Footwear,Lumio,Supplier_023,90.01,132.2,2024-02-07
+PROD1108,Classic Tech Accessorie 431,Accessories,Tech Accessories,Novalux,Supplier_022,20.81,39.5,2024-07-15
+PROD1109,Deluxe Smart Home 702,Electronics,Smart Home,Meadowlane,Supplier_038,190.59,254.91,2023-12-28
+PROD1110,Portable Home Decor 858,Home & Kitchen,Home Decor,Craftly,Supplier_033,35.75,56.94,2025-03-04
+PROD1111,Everyday Cookware 207,Home & Kitchen,Cookware,Novalux,Supplier_009,125.86,212.9,2024-01-03
+PROD1112,Classic Jewelry & Watche 993,Accessories,Jewelry & Watches,Craftly,Supplier_016,15.59,27.91,2025-03-06
+PROD1113,Classic Beauty Tool 560,Beauty,Beauty Tools,Verona Basics,Supplier_036,27.21,59.98,2024-08-25
+PROD1114,Essential Athletic Wear 833,Sports & Outdoors,Athletic Wear,Novalux,Supplier_016,203.07,287.03,2025-05-08
+PROD1115,Essential Outerwear 925,Fashion,Outerwear,Meadowlane,Supplier_009,78.99,126.42,2025-01-25
+PROD1116,Everyday Skincare 899,Beauty,Skincare,Pulse,Supplier_026,40.81,80.78,2025-10-20
+PROD1117,Essential Fitness Gear 158,Sports & Outdoors,Fitness Gear,Solstice,Supplier_024,124.25,186.91,2024-04-22
+PROD1118,Essential Cookware 789,Home & Kitchen,Cookware,Kindra,Supplier_020,80.55,126.87,2025-08-02
+PROD1119,Pro Home Decor 882,Home & Kitchen,Home Decor,Craftly,Supplier_037,69.28,115.39,2023-04-16
+PROD1120,Premium Beauty Tool 169,Beauty,Beauty Tools,Kindra,Supplier_011,8.31,19.71,2024-10-26
+PROD1121,Modern Small Appliance 420,Home & Kitchen,Small Appliances,Lumio,Supplier_036,63.49,104.1,2023-07-06
+PROD1122,Modern Apparel 913,Fashion,Apparel,UrbanEdge,Supplier_019,21.69,35.66,2025-10-16
+PROD1123,Portable Apparel 233,Fashion,Apparel,Novalux,Supplier_031,45.32,77.79,2024-10-18
+PROD1124,Modern Fragrance 259,Beauty,Fragrance,Meadowlane,Supplier_016,18.15,46.51,2025-05-30
+PROD1125,Deluxe Storage & Organization 456,Home & Kitchen,Storage & Organization,Pulse,Supplier_008,54.0,75.85,2023-03-13
+PROD1126,Signature Cookware 806,Home & Kitchen,Cookware,Craftly,Supplier_032,123.68,212.95,2025-03-01
+PROD1127,Deluxe Skincare 275,Beauty,Skincare,Northstead,Supplier_030,28.56,60.63,2025-02-25
+PROD1128,Compact Small Gadget 122,Electronics,Small Gadgets,UrbanEdge,Supplier_027,152.14,211.71,2023-02-09
+PROD1129,Modern Outdoor Equipment 406,Sports & Outdoors,Outdoor Equipment,Novalux,Supplier_004,99.98,147.96,2025-07-29
+PROD1130,Smart Tech Accessorie 280,Accessories,Tech Accessories,Craftly,Supplier_039,36.95,78.08,2024-05-23
+PROD1131,Pro Fragrance 444,Beauty,Fragrance,Pulse,Supplier_020,31.53,78.43,2023-05-17
+PROD1132,Signature Headphone 490,Electronics,Headphones,Verona Basics,Supplier_023,51.25,77.58,2024-07-29
+PROD1133,Everyday Smart Home 862,Electronics,Smart Home,Solstice,Supplier_028,101.19,142.42,2025-01-21
+PROD1134,Everyday Smart Home 935,Electronics,Smart Home,UrbanEdge,Supplier_040,32.92,45.21,2023-08-22
+PROD1135,Signature Small Gadget 341,Electronics,Small Gadgets,Lumio,Supplier_008,80.14,109.82,2024-07-07
+PROD1136,Pro Apparel 841,Fashion,Apparel,Pulse,Supplier_008,18.95,28.54,2024-03-19
+PROD1137,Ultra Smart Home 883,Electronics,Smart Home,Solstice,Supplier_016,80.19,111.78,2025-03-18
+PROD1138,Ultra Jewelry & Watche 880,Accessories,Jewelry & Watches,UrbanEdge,Supplier_024,44.59,80.17,2025-04-13
+PROD1139,Compact Fitness Gear 331,Sports & Outdoors,Fitness Gear,Novalux,Supplier_017,189.95,297.03,2025-01-16
+PROD1140,Pro Jewelry & Watche 482,Accessories,Jewelry & Watches,Pulse,Supplier_030,58.22,98.1,2024-08-07
+PROD1141,Everyday Athletic Wear 688,Sports & Outdoors,Athletic Wear,Everly,Supplier_012,48.13,75.68,2023-08-08
+PROD1142,Essential Beauty Tool 760,Beauty,Beauty Tools,Lumio,Supplier_019,25.94,64.98,2024-08-31
+PROD1143,Classic Footwear 925,Fashion,Footwear,Everly,Supplier_034,49.81,78.25,2025-05-15
+PROD1144,Modern Small Appliance 924,Home & Kitchen,Small Appliances,UrbanEdge,Supplier_022,110.68,201.6,2023-01-21
+PROD1145,Pro Outerwear 286,Fashion,Outerwear,Lumio,Supplier_028,27.14,41.94,2025-07-09
+PROD1146,Ultra Athletic Wear 761,Sports & Outdoors,Athletic Wear,Northstead,Supplier_014,124.66,209.93,2023-11-09
+PROD1147,Modern Apparel 488,Fashion,Apparel,Kindra,Supplier_002,37.71,56.65,2024-02-17
+PROD1148,Smart Tech Accessorie 206,Accessories,Tech Accessories,UrbanEdge,Supplier_004,30.0,52.95,2023-03-29
+PROD1149,Deluxe Apparel 607,Fashion,Apparel,Solstice,Supplier_012,91.22,132.46,2024-07-12
+PROD1150,Pro Small Appliance 675,Home & Kitchen,Small Appliances,Verona Basics,Supplier_030,108.75,194.91,2023-12-02
+PROD1151,Premium Outerwear 383,Fashion,Outerwear,Pulse,Supplier_026,28.88,43.76,2023-02-01
+PROD1152,Everyday Skincare 749,Beauty,Skincare,Lumio,Supplier_036,21.54,86.17,2025-06-23
+PROD1153,Premium Outdoor Equipment 488,Sports & Outdoors,Outdoor Equipment,Solstice,Supplier_018,78.23,111.18,2025-02-13
+PROD1154,Pro Fitness Gear 831,Sports & Outdoors,Fitness Gear,Pulse,Supplier_001,98.78,144.94,2023-02-13
+PROD1155,Essential Jewelry & Watche 328,Accessories,Jewelry & Watches,Novalux,Supplier_024,30.86,78.32,2024-11-02
+PROD1156,Essential Fitness Gear 821,Sports & Outdoors,Fitness Gear,Craftly,Supplier_026,104.2,174.1,2025-05-08
+PROD1157,Modern Storage & Organization 643,Home & Kitchen,Storage & Organization,Verona Basics,Supplier_003,55.6,81.72,2025-02-07
+PROD1158,Signature Apparel 925,Fashion,Apparel,Verona Basics,Supplier_003,28.81,53.08,2023-10-28
+PROD1159,Portable Skincare 878,Beauty,Skincare,TrueForm,Supplier_003,5.47,12.52,2025-11-27
+PROD1160,Everyday Beauty Tool 290,Beauty,Beauty Tools,Everly,Supplier_040,34.19,64.71,2024-11-16
+PROD1161,Compact Small Gadget 414,Electronics,Small Gadgets,Craftly,Supplier_040,22.64,27.94,2024-07-10
+PROD1162,Signature Small Appliance 623,Home & Kitchen,Small Appliances,Northstead,Supplier_002,43.05,72.45,2024-04-11
+PROD1163,Modern Small Appliance 993,Home & Kitchen,Small Appliances,Novalux,Supplier_033,94.35,162.26,2025-03-11
+PROD1164,Portable Fitness Gear 958,Sports & Outdoors,Fitness Gear,Everly,Supplier_011,70.25,100.79,2024-05-13
+PROD1165,Pro Footwear 875,Fashion,Footwear,TrueForm,Supplier_032,45.89,66.91,2023-12-15
+PROD1166,Classic Jewelry & Watche 798,Accessories,Jewelry & Watches,Meadowlane,Supplier_017,73.08,129.23,2025-05-28
+PROD1167,Smart Beauty Tool 987,Beauty,Beauty Tools,Solstice,Supplier_023,7.59,16.48,2023-01-26
+PROD1168,Pro Small Appliance 418,Home & Kitchen,Small Appliances,Craftly,Supplier_028,116.34,192.13,2024-01-05
+PROD1169,Premium Chargers & Cable 440,Electronics,Chargers & Cables,UrbanEdge,Supplier_038,198.6,285.61,2025-04-27
+PROD1170,Compact Headphone 842,Electronics,Headphones,Meadowlane,Supplier_019,107.05,143.39,2023-08-19
+PROD1171,Ultra Small Gadget 474,Electronics,Small Gadgets,Northstead,Supplier_029,100.63,145.08,2025-08-24
+PROD1172,Compact Home Decor 119,Home & Kitchen,Home Decor,Everly,Supplier_021,117.98,194.2,2025-10-06
+PROD1173,Portable Athletic Wear 849,Sports & Outdoors,Athletic Wear,Verona Basics,Supplier_014,61.51,96.63,2023-10-18
+PROD1174,Deluxe Home Decor 136,Home & Kitchen,Home Decor,Everly,Supplier_019,14.21,28.39,2024-01-25
+PROD1175,Classic Headphone 804,Electronics,Headphones,Meadowlane,Supplier_031,89.05,122.04,2025-08-06
+PROD1176,Classic Headphone 695,Electronics,Headphones,Solstice,Supplier_040,101.93,130.28,2024-07-06
+PROD1177,Premium Smart Home 392,Electronics,Smart Home,Novalux,Supplier_002,237.76,324.5,2023-12-08
+PROD1178,Compact Outdoor Equipment 276,Sports & Outdoors,Outdoor Equipment,Verona Basics,Supplier_011,124.66,192.85,2025-04-18
+PROD1179,Essential Outdoor Equipment 246,Sports & Outdoors,Outdoor Equipment,Lumio,Supplier_034,130.52,185.55,2025-05-08
+PROD1180,Modern Small Appliance 859,Home & Kitchen,Small Appliances,Pulse,Supplier_037,94.12,183.8,2024-02-16
+PROD1181,Smart Tech Accessorie 996,Accessories,Tech Accessories,Lumio,Supplier_001,32.65,56.98,2024-10-22
+PROD1182,Ultra Beauty Tool 945,Beauty,Beauty Tools,Meadowlane,Supplier_032,28.95,80.48,2023-06-23
+PROD1183,Smart Outdoor Equipment 929,Sports & Outdoors,Outdoor Equipment,Everly,Supplier_037,72.53,124.96,2024-07-29
+PROD1184,Ultra Beauty Tool 822,Beauty,Beauty Tools,Meadowlane,Supplier_025,6.54,16.83,2025-05-24
+PROD1185,Deluxe Smart Home 758,Electronics,Smart Home,Novalux,Supplier_020,87.81,120.57,2023-03-28
+PROD1186,Portable Beauty Tool 803,Beauty,Beauty Tools,Craftly,Supplier_021,41.96,88.95,2023-12-04
+PROD1187,Portable Home Decor 503,Home & Kitchen,Home Decor,UrbanEdge,Supplier_040,120.32,218.02,2023-12-16
+PROD1188,Everyday Fragrance 963,Beauty,Fragrance,Lumio,Supplier_010,27.41,57.41,2024-06-02
+PROD1189,Modern Home Decor 555,Home & Kitchen,Home Decor,Everly,Supplier_039,78.32,129.55,2024-04-01
+PROD1190,Ultra Fitness Gear 934,Sports & Outdoors,Fitness Gear,Craftly,Supplier_006,103.7,157.61,2025-10-02
+PROD1191,Everyday Home Decor 600,Home & Kitchen,Home Decor,Northstead,Supplier_017,25.57,42.59,2024-05-30
+PROD1192,Compact Jewelry & Watche 413,Accessories,Jewelry & Watches,Kindra,Supplier_003,11.73,20.9,2025-07-11
+PROD1193,Smart Cookware 465,Home & Kitchen,Cookware,Kindra,Supplier_009,72.01,119.7,2025-10-30
+PROD1194,Modern Apparel 765,Fashion,Apparel,UrbanEdge,Supplier_007,87.34,157.0,2024-02-21
+PROD1195,Pro Bag 443,Accessories,Bags,Kindra,Supplier_020,17.79,41.23,2023-05-17
+PROD1196,Pro Outdoor Equipment 962,Sports & Outdoors,Outdoor Equipment,Craftly,Supplier_001,10.82,16.21,2023-09-25
+PROD1197,Smart Outdoor Equipment 534,Sports & Outdoors,Outdoor Equipment,Solstice,Supplier_004,100.36,147.68,2025-09-12
+PROD1198,Premium Cookware 682,Home & Kitchen,Cookware,Pulse,Supplier_038,89.43,152.62,2023-12-26
+PROD1199,Smart Cookware 387,Home & Kitchen,Cookware,Meadowlane,Supplier_035,120.75,192.1,2024-03-03
+PROD1200,Smart Tech Accessorie 495,Accessories,Tech Accessories,Lumio,Supplier_010,65.01,106.04,2025-08-06
+PROD1201,Essential Jewelry & Watche 328,Accessories,Jewelry & Watches,UrbanEdge,Supplier_019,37.54,84.38,2023-05-08
+PROD1202,Pro Home Decor 567,Home & Kitchen,Home Decor,Meadowlane,Supplier_022,67.17,125.21,2023-12-16
+PROD1203,Everyday Home Decor 925,Home & Kitchen,Home Decor,Pulse,Supplier_036,78.47,111.22,2024-05-13
+PROD1204,Essential Apparel 508,Fashion,Apparel,TrueForm,Supplier_032,26.85,54.71,2025-04-30
+PROD1205,Classic Smart Home 360,Electronics,Smart Home,Solstice,Supplier_002,97.89,138.63,2024-08-17
+PROD1206,Ultra Cookware 462,Home & Kitchen,Cookware,Northstead,Supplier_016,98.27,159.99,2024-10-20
+PROD1207,Compact Apparel 751,Fashion,Apparel,Northstead,Supplier_016,20.07,31.62,2024-02-03
+PROD1208,Classic Jewelry & Watche 209,Accessories,Jewelry & Watches,Pulse,Supplier_016,28.65,49.51,2023-03-10
+PROD1209,Smart Outerwear 255,Fashion,Outerwear,TrueForm,Supplier_010,13.1,20.2,2024-04-15
+PROD1210,Everyday Bag 619,Accessories,Bags,TrueForm,Supplier_016,54.61,103.45,2025-11-11
+PROD1211,Pro Apparel 598,Fashion,Apparel,TrueForm,Supplier_023,35.5,58.9,2023-01-27
+PROD1212,Smart Beauty Tool 716,Beauty,Beauty Tools,Pulse,Supplier_040,24.45,50.59,2024-03-15
+PROD1213,Pro Storage & Organization 608,Home & Kitchen,Storage & Organization,TrueForm,Supplier_025,77.08,130.86,2025-02-06
+PROD1214,Classic Outerwear 484,Fashion,Outerwear,Northstead,Supplier_006,89.61,132.49,2023-06-10
+PROD1215,Ultra Chargers & Cable 538,Electronics,Chargers & Cables,Northstead,Supplier_013,51.51,71.79,2023-11-06
+PROD1216,Ultra Outdoor Equipment 896,Sports & Outdoors,Outdoor Equipment,Novalux,Supplier_022,155.12,260.5,2024-04-26
+PROD1217,Everyday Fitness Gear 674,Sports & Outdoors,Fitness Gear,Craftly,Supplier_013,42.32,57.69,2024-02-05
+PROD1218,Everyday Outerwear 508,Fashion,Outerwear,Pulse,Supplier_002,48.47,89.62,2024-07-16
+PROD1219,Everyday Tech Accessorie 907,Accessories,Tech Accessories,Meadowlane,Supplier_028,37.75,68.14,2025-10-31
+PROD1220,Pro Outerwear 427,Fashion,Outerwear,Craftly,Supplier_039,33.6,54.38,2025-05-22
+PROD1221,Compact Bag 770,Accessories,Bags,Verona Basics,Supplier_031,36.41,65.69,2025-05-12
+PROD1222,Classic Small Appliance 994,Home & Kitchen,Small Appliances,Meadowlane,Supplier_006,82.6,141.48,2024-12-04
+PROD1223,Deluxe Home Decor 790,Home & Kitchen,Home Decor,Craftly,Supplier_025,9.86,17.08,2023-03-16
+PROD1224,Ultra Smart Home 377,Electronics,Smart Home,Northstead,Supplier_039,206.79,256.54,2025-10-18
+PROD1225,Portable Tech Accessorie 651,Accessories,Tech Accessories,Pulse,Supplier_015,28.14,60.04,2024-09-15
+PROD1226,Classic Bag 405,Accessories,Bags,TrueForm,Supplier_033,22.22,35.15,2024-05-02
+PROD1227,Premium Outdoor Equipment 891,Sports & Outdoors,Outdoor Equipment,TrueForm,Supplier_037,99.87,163.54,2024-02-29
+PROD1228,Everyday Tech Accessorie 730,Accessories,Tech Accessories,Kindra,Supplier_008,62.48,114.29,2023-01-21
+PROD1229,Smart Chargers & Cable 124,Electronics,Chargers & Cables,Craftly,Supplier_039,120.67,170.46,2025-09-26
+PROD1230,Essential Fitness Gear 635,Sports & Outdoors,Fitness Gear,Everly,Supplier_020,90.75,138.35,2025-01-11
+PROD1231,Classic Tech Accessorie 634,Accessories,Tech Accessories,UrbanEdge,Supplier_027,36.52,78.58,2025-10-05
+PROD1232,Ultra Fragrance 750,Beauty,Fragrance,TrueForm,Supplier_034,12.56,34.28,2025-01-11
+PROD1233,Portable Headphone 585,Electronics,Headphones,UrbanEdge,Supplier_023,169.18,237.4,2025-09-04
+PROD1234,Ultra Headphone 888,Electronics,Headphones,Meadowlane,Supplier_007,207.15,273.87,2024-12-29
+PROD1235,Compact Home Decor 744,Home & Kitchen,Home Decor,Lumio,Supplier_023,33.36,56.93,2023-05-21
+PROD1236,Ultra Outerwear 848,Fashion,Outerwear,Solstice,Supplier_035,60.96,102.54,2024-01-22
+PROD1237,Signature Smart Home 255,Electronics,Smart Home,Meadowlane,Supplier_010,136.68,190.21,2025-05-04
+PROD1238,Smart Skincare 554,Beauty,Skincare,Novalux,Supplier_013,39.2,85.0,2025-01-02
+PROD1239,Deluxe Footwear 638,Fashion,Footwear,TrueForm,Supplier_030,19.28,29.99,2023-05-11
+PROD1240,Modern Smart Home 913,Electronics,Smart Home,Novalux,Supplier_012,20.89,29.3,2025-07-06
+PROD1241,Classic Footwear 560,Fashion,Footwear,Novalux,Supplier_003,23.94,40.79,2025-04-25
+PROD1242,Essential Home Decor 304,Home & Kitchen,Home Decor,Verona Basics,Supplier_004,87.99,166.9,2024-09-04
+PROD1243,Smart Headphone 265,Electronics,Headphones,Pulse,Supplier_019,171.94,235.5,2024-03-19
+PROD1244,Premium Jewelry & Watche 779,Accessories,Jewelry & Watches,Craftly,Supplier_008,10.91,19.63,2023-03-17
+PROD1245,Compact Haircare 330,Beauty,Haircare,Northstead,Supplier_025,14.05,39.81,2024-09-07
+PROD1246,Premium Cookware 826,Home & Kitchen,Cookware,Novalux,Supplier_037,104.75,166.72,2023-05-17
+PROD1247,Pro Chargers & Cable 421,Electronics,Chargers & Cables,Pulse,Supplier_040,188.22,276.76,2024-05-28
+PROD1248,Compact Small Gadget 732,Electronics,Small Gadgets,Verona Basics,Supplier_013,227.68,315.49,2023-01-29
+PROD1249,Compact Tech Accessorie 207,Accessories,Tech Accessories,Novalux,Supplier_013,45.09,79.75,2024-06-10
+PROD1250,Premium Bag 129,Accessories,Bags,UrbanEdge,Supplier_017,31.5,64.46,2024-01-24
+PROD1251,Deluxe Outerwear 950,Fashion,Outerwear,Kindra,Supplier_031,26.94,47.09,2025-08-18
+PROD1252,Ultra Fragrance 868,Beauty,Fragrance,Northstead,Supplier_012,9.52,21.0,2025-03-13
+PROD1253,Signature Haircare 648,Beauty,Haircare,Northstead,Supplier_016,20.38,36.57,2025-01-04
+PROD1254,Premium Skincare 958,Beauty,Skincare,Solstice,Supplier_028,33.51,73.92,2023-04-02
+PROD1255,Modern Outerwear 737,Fashion,Outerwear,Craftly,Supplier_023,78.58,130.19,2024-06-06
+PROD1256,Deluxe Fitness Gear 358,Sports & Outdoors,Fitness Gear,Novalux,Supplier_002,121.91,158.14,2024-08-12
+PROD1257,Ultra Fitness Gear 986,Sports & Outdoors,Fitness Gear,Northstead,Supplier_003,171.98,238.31,2025-02-20
+PROD1258,Pro Headphone 293,Electronics,Headphones,Solstice,Supplier_004,91.1,128.51,2025-07-13
+PROD1259,Ultra Beauty Tool 346,Beauty,Beauty Tools,Northstead,Supplier_021,40.1,77.67,2025-05-10

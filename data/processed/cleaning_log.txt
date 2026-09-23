@@ -1,0 +1,10 @@
+=== Verona Data Cleaning Log ===
+
+[customers] rows in: 7035, duplicates removed: 35, invalid ages corrected: 245, final rows: 7000
+[products] rows in: 260, cost>price errors fixed: 2, missing cost imputed: 5, final rows: 260
+[orders] rows in: 32128, duplicates removed: 128, orphan customer refs removed: 0, missing shipping filled: 640, final rows: 32000
+[order_items] rows in: 49190, orphan refs removed: 0, invalid quantities removed: 147, final rows: 49043
+[payments] rows in: 32000, orphan refs removed: 0, missing method filled: 480, final rows: 32000
+[returns] rows in: 2137, orphan refs removed: 0, missing reason filled: 42, final rows: 2137
+[marketing] rows in: 150, missing spend imputed: 2, final rows: 150
+[website_events] rows in: 120000, orphan customer refs removed: 0, missing device filled: 1200, invalid product refs removed: 0, final rows: 120000
