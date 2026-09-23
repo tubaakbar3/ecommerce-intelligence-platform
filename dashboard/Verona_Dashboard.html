@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Verona Home & Lifestyle Co. — Executive Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  :root {
+    --navy: #1a3d5c;
+    --navy-light: #2c5f8a;
+    --accent: #c0392b;
+    --bg: #f4f7fa;
+    --card: #ffffff;
+    --text: #222;
+    --muted: #667;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', -apple-system, Arial, sans-serif;
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+  }
+  header {
+    background: linear-gradient(135deg, var(--navy), var(--navy-light));
+    color: white;
+    padding: 32px 40px;
+  }
+  header h1 { margin: 0 0 6px 0; font-size: 28px; }
+  header p { margin: 0; opacity: 0.85; font-size: 14px; }
+  nav {
+    display: flex;
+    gap: 4px;
+    background: var(--navy);
+    padding: 0 40px;
+  }
+  nav button {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all 0.15s;
+  }
+  nav button:hover { color: white; }
+  nav button.active {
+    color: white;
+    border-bottom: 3px solid var(--accent);
+  }
+  main { padding: 30px 40px 60px; max-width: 1300px; margin: 0 auto; }
+  .page { display: none; }
+  .page.active { display: block; }
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+  .kpi-card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--navy-light);
+  }
+  .kpi-card .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .kpi-card .value { font-size: 26px; font-weight: 700; color: var(--navy); }
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .chart-grid.full { grid-template-columns: 1fr; }
+  .card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .card h3 { margin: 0 0 14px 0; font-size: 15px; color: var(--navy); }
+  canvas { max-height: 320px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eee; }
+  th { color: var(--muted); text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge.good { background: #e3f2e6; color: #2a7a3b; }
+  .badge.bad { background: #fce7e6; color: var(--accent); }
+  .insight-box {
+    background: #eef4f9;
+    border-left: 4px solid var(--navy-light);
+    padding: 14px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #34506b;
+    margin-top: 16px;
+  }
+  footer { text-align: center; padding: 20px; color: var(--muted); font-size: 12px; }
+  @media (max-width: 900px) {
+    .chart-grid { grid-template-columns: 1fr; }
+    header, nav, main { padding-left: 16px; padding-right: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Verona Home &amp; Lifestyle Co.</h1>
+  <p>E-Commerce Revenue, Customer &amp; Product Intelligence — 2023 to 2025 (synthetic portfolio dataset)</p>
+</header>
+
+<nav>
+  <button class="tab-btn active" data-page="overview">Executive Overview</button>
+  <button class="tab-btn" data-page="customers">Customer Intelligence</button>
+  <button class="tab-btn" data-page="products">Product Intelligence</button>
+  <button class="tab-btn" data-page="marketing">Marketing</button>
+</nav>
+
+<main>
+
+  <!-- PAGE 1: OVERVIEW -->
+  <div class="page active" id="page-overview">
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="label">Gross Revenue</div><div class="value" id="kpi-revenue">--</div></div>
+      <div class="kpi-card"><div class="label">Gross Profit</div><div class="value" id="kpi-profit">--</div></div>
+      <div class="kpi-card"><div class="label">Gross Margin</div><div class="value" id="kpi-margin">--</div></div>
+      <div class="kpi-card"><div class="label">Total Orders</div><div class="value" id="kpi-orders">--</div></div>
+      <div class="kpi-card"><div class="label">AOV</div><div class="value" id="kpi-aov">--</div></div>
+      <div class="kpi-card"><div class="label">Customers</div><div class="value" id="kpi-customers">--</div></div>
+    </div>
+
+    <div class="chart-grid full">
+      <div class="card">
+        <h3>Monthly Revenue Trend (2023–2025)</h3>
+        <canvas id="chartMonthly"></canvas>
+        <div class="insight-box">Revenue is essentially flat year over year (~$1.3M/year) with a consistent November seasonal peak driven by holiday shopping.</div>
+      </div>
+    </div>
+
+    <div class="chart-grid">
+      <div class="card">
+        <h3>Revenue by Category</h3>
+        <canvas id="chartCategory"></canvas>
+      </div>
+      <div class="card">
+        <h3>Revenue by Sales Channel</h3>
+        <canvas id="chartChannel"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 2: CUSTOMERS -->
+  <div class="page" id="page-customers">
+    <div class="chart-grid">
+      <div class="card">
+        <h3>Revenue by RFM Segment</h3>
+        <canvas id="chartRFM"></canvas>
+        <div class="insight-box">Champions (17% of customers) generate 58% of total revenue — the clearest case for a dedicated retention program.</div>
+      </div>
+      <div class="card">
+        <h3>Customers per Segment</h3>
+        <canvas id="chartRFMCount"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: PRODUCTS -->
+  <div class="page" id="page-products">
+    <div class="chart-grid">
+      <div class="card">
+        <h3>Top 10 Products by Revenue</h3>
+        <canvas id="chartTopProducts"></canvas>
+      </div>
+      <div class="card">
+        <h3>Return Rate by Category</h3>
+        <canvas id="chartReturns"></canvas>
+        <div class="insight-box">Fashion (9.8%) and Electronics (8.6%) have the highest return rates — worth investigating sizing and defect issues respectively.</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Category Margin Comparison</h3>
+      <table id="tableMargin">
+        <thead><tr><th>Category</th><th>Revenue</th><th>Margin</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PAGE 4: MARKETING -->
+  <div class="page" id="page-marketing">
+    <div class="chart-grid full">
+      <div class="card">
+        <h3>ROAS by Marketing Channel</h3>
+        <canvas id="chartROAS"></canvas>
+        <div class="insight-box">Email delivers the best ROAS (2.84x) on modest spend. Display advertising is unprofitable (0.45x) — a clear reallocation opportunity.</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Spend vs. Attributed Revenue</h3>
+      <table id="tableMarketing">
+        <thead><tr><th>Channel</th><th>Spend</th><th>Attributed Revenue</th><th>ROAS</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+<footer>Synthetic portfolio dataset · Verona Home & Lifestyle Co. is a fictional company · Generated for demonstration purposes</footer>
+
+<script>
+const DATA = {"kpi": {"gross_revenue": 3955283.0, "gross_profit": 1386608.0, "margin": 0.3506, "total_orders": 21244, "aov": 186.18, "purchasing_customers": 5394}, "monthly_revenue": [{"ym": "2023-01", "rev": 92884.0}, {"ym": "2023-02", "rev": 96723.0}, {"ym": "2023-03", "rev": 102716.0}, {"ym": "2023-04", "rev": 99340.0}, {"ym": "2023-05", "rev": 115253.0}, {"ym": "2023-06", "rev": 88478.0}, {"ym": "2023-07", "rev": 99191.0}, {"ym": "2023-08", "rev": 114167.0}, {"ym": "2023-09", "rev": 112174.0}, {"ym": "2023-10", "rev": 99705.0}, {"ym": "2023-11", "rev": 162019.0}, {"ym": "2023-12", "rev": 135863.0}, {"ym": "2024-01", "rev": 105434.0}, {"ym": "2024-02", "rev": 104571.0}, {"ym": "2024-03", "rev": 111817.0}, {"ym": "2024-04", "rev": 97406.0}, {"ym": "2024-05", "rev": 104935.0}, {"ym": "2024-06", "rev": 90273.0}, {"ym": "2024-07", "rev": 93903.0}, {"ym": "2024-08", "rev": 111225.0}, {"ym": "2024-09", "rev": 114042.0}, {"ym": "2024-10", "rev": 114468.0}, {"ym": "2024-11", "rev": 158894.0}, {"ym": "2024-12", "rev": 132263.0}, {"ym": "2025-01", "rev": 86725.0}, {"ym": "2025-02", "rev": 99092.0}, {"ym": "2025-03", "rev": 102453.0}, {"ym": "2025-04", "rev": 97574.0}, {"ym": "2025-05", "rev": 113166.0}, {"ym": "2025-06", "rev": 87791.0}, {"ym": "2025-07", "rev": 93162.0}, {"ym": "2025-08", "rev": 113429.0}, {"ym": "2025-09", "rev": 110790.0}, {"ym": "2025-10", "rev": 94307.0}, {"ym": "2025-11", "rev": 157694.0}, {"ym": "2025-12", "rev": 141357.0}], "category_revenue": [{"category": "Electronics", "revenue": 1170546.0, "margin": 0.248}, {"category": "Home & Kitchen", "revenue": 863387.0, "margin": 0.39}, {"category": "Sports & Outdoors", "revenue": 726864.0, "margin": 0.321}, {"category": "Fashion", "revenue": 498808.0, "margin": 0.345}, {"category": "Beauty", "revenue": 411105.0, "margin": 0.559}, {"category": "Accessories", "revenue": 284572.0, "margin": 0.44}], "channel_revenue": [{"channel": "Website", "orders": 11699, "revenue": 2184895.0}, {"channel": "Marketplace", "orders": 6397, "revenue": 1196379.0}, {"channel": "Mobile App", "orders": 3148, "revenue": 574009.0}], "marketing": [{"channel": "Email", "spend": 378320.0, "revenue": 1073958.0, "roas": 2.839}, {"channel": "Paid Search", "spend": 245406.0, "revenue": 484414.0, "roas": 1.974}, {"channel": "Affiliate", "spend": 407247.0, "revenue": 466886.0, "roas": 1.146}, {"channel": "Social Media", "spend": 344072.0, "revenue": 371453.0, "roas": 1.08}, {"channel": "Display", "spend": 291396.0, "revenue": 131081.0, "roas": 0.45}], "rfm_segments": [{"segment": "At Risk", "customers": 551, "revenue": 228583.0}, {"segment": "Champions", "customers": 1195, "revenue": 2275581.0}, {"segment": "Lost Customers", "customers": 1354, "revenue": 281331.0}, {"segment": "Loyal Customers", "customers": 963, "revenue": 746246.0}, {"segment": "New Customers", "customers": 184, "revenue": 34569.0}, {"segment": "Others", "customers": 572, "revenue": 177448.0}, {"segment": "Potential Loyalists", "customers": 575, "revenue": 211524.0}], "return_rate": [{"category": "Fashion", "units_sold": 6698, "units_returned": 655, "return_rate": 0.0978}, {"category": "Electronics", "units_sold": 7967, "units_returned": 683, "return_rate": 0.0857}, {"category": "Beauty", "units_sold": 7654, "units_returned": 358, "return_rate": 0.0468}, {"category": "Sports & Outdoors", "units_sold": 5003, "units_returned": 219, "return_rate": 0.0438}, {"category": "Accessories", "units_sold": 4663, "units_returned": 181, "return_rate": 0.0388}, {"category": "Home & Kitchen", "units_sold": 7089, "units_returned": 259, "return_rate": 0.0365}], "top_products": [{"product_name": "Portable Smart Home 131", "category": "Electronics", "revenue": 170590.0}, {"product_name": "Classic Chargers & Cable 841", "category": "Electronics", "revenue": 128422.0}, {"product_name": "Essential Outdoor Equipment 246", "category": "Sports & Outdoors", "revenue": 104605.0}, {"product_name": "Ultra Footwear 277", "category": "Fashion", "revenue": 94091.0}, {"product_name": "Premium Chargers & Cable 440", "category": "Electronics", "revenue": 89623.0}, {"product_name": "Signature Cookware 806", "category": "Home & Kitchen", "revenue": 87331.0}, {"product_name": "Ultra Headphone 888", "category": "Electronics", "revenue": 84879.0}, {"product_name": "Modern Home Decor 555", "category": "Home & Kitchen", "revenue": 83989.0}, {"product_name": "Ultra Fitness Gear 680", "category": "Sports & Outdoors", "revenue": 78178.0}, {"product_name": "Ultra Athletic Wear 137", "category": "Sports & Outdoors", "revenue": 68069.0}]}
+;
+
+const fmtMoney = n => '$' + Number(n).toLocaleString('en-US', {maximumFractionDigits: 0});
+const fmtPct = n => (n * 100).toFixed(1) + '%';
+
+// KPIs
+document.getElementById('kpi-revenue').textContent = fmtMoney(DATA.kpi.gross_revenue);
+document.getElementById('kpi-profit').textContent = fmtMoney(DATA.kpi.gross_profit);
+document.getElementById('kpi-margin').textContent = fmtPct(DATA.kpi.margin);
+document.getElementById('kpi-orders').textContent = DATA.kpi.total_orders.toLocaleString();
+document.getElementById('kpi-aov').textContent = fmtMoney(DATA.kpi.aov);
+document.getElementById('kpi-customers').textContent = DATA.kpi.purchasing_customers.toLocaleString();
+
+const navy = '#1a3d5c', navyLight = '#2c5f8a', accent = '#c0392b', lightBlue = '#8a9fb5';
+const palette = ['#1a3d5c','#2c5f8a','#4a7ba6','#6a9ac2','#8ab8de','#aad6fa'];
+
+// Monthly revenue line chart
+new Chart(document.getElementById('chartMonthly'), {
+  type: 'line',
+  data: {
+    labels: DATA.monthly_revenue.map(d => d.ym),
+    datasets: [{
+      label: 'Revenue',
+      data: DATA.monthly_revenue.map(d => d.rev),
+      borderColor: navy, backgroundColor: 'rgba(26,61,92,0.08)',
+      fill: true, tension: 0.25, pointRadius: 2
+    }]
+  },
+  options: { plugins: { legend: { display: false } }, scales: { y: { ticks: { callback: v => '$' + (v/1000) + 'k' } } } }
+});
+
+// Category revenue bar
+new Chart(document.getElementById('chartCategory'), {
+  type: 'bar',
+  data: {
+    labels: DATA.category_revenue.map(d => d.category),
+    datasets: [{ label: 'Revenue', data: DATA.category_revenue.map(d => d.revenue), backgroundColor: palette }]
+  },
+  options: { indexAxis: 'y', plugins: { legend: { display: false } } }
+});
+
+// Channel revenue
+new Chart(document.getElementById('chartChannel'), {
+  type: 'doughnut',
+  data: {
+    labels: DATA.channel_revenue.map(d => d.channel),
+    datasets: [{ data: DATA.channel_revenue.map(d => d.revenue), backgroundColor: [navy, navyLight, lightBlue] }]
+  },
+  options: { plugins: { legend: { position: 'bottom' } } }
+});
+
+// RFM revenue
+new Chart(document.getElementById('chartRFM'), {
+  type: 'bar',
+  data: {
+    labels: DATA.rfm_segments.map(d => d.segment),
+    datasets: [{ label: 'Revenue', data: DATA.rfm_segments.map(d => d.revenue), backgroundColor: navyLight }]
+  },
+  options: { indexAxis: 'y', plugins: { legend: { display: false } } }
+});
+
+// RFM counts
+new Chart(document.getElementById('chartRFMCount'), {
+  type: 'pie',
+  data: {
+    labels: DATA.rfm_segments.map(d => d.segment),
+    datasets: [{ data: DATA.rfm_segments.map(d => d.customers), backgroundColor: palette.concat(['#c0392b']) }]
+  },
+  options: { plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } } } }
+});
+
+// Top products
+new Chart(document.getElementById('chartTopProducts'), {
+  type: 'bar',
+  data: {
+    labels: DATA.top_products.map(d => d.product_name),
+    datasets: [{ label: 'Revenue', data: DATA.top_products.map(d => d.revenue), backgroundColor: navy }]
+  },
+  options: { indexAxis: 'y', plugins: { legend: { display: false } } }
+});
+
+// Return rate
+new Chart(document.getElementById('chartReturns'), {
+  type: 'bar',
+  data: {
+    labels: DATA.return_rate.map(d => d.category),
+    datasets: [{ label: 'Return Rate', data: DATA.return_rate.map(d => d.return_rate * 100), backgroundColor: accent }]
+  },
+  options: { plugins: { legend: { display: false } }, scales: { y: { ticks: { callback: v => v + '%' } } } }
+});
+
+// Margin table
+const marginBody = document.querySelector('#tableMargin tbody');
+DATA.category_revenue.forEach(d => {
+  const badge = d.margin >= 0.4 ? 'good' : (d.margin < 0.3 ? 'bad' : '');
+  marginBody.innerHTML += `<tr><td>${d.category}</td><td>${fmtMoney(d.revenue)}</td><td><span class="badge ${badge}">${fmtPct(d.margin)}</span></td></tr>`;
+});
+
+// ROAS chart
+new Chart(document.getElementById('chartROAS'), {
+  type: 'bar',
+  data: {
+    labels: DATA.marketing.map(d => d.channel),
+    datasets: [{
+      label: 'ROAS',
+      data: DATA.marketing.map(d => d.roas),
+      backgroundColor: DATA.marketing.map(d => d.roas >= 1 ? navy : accent)
+    }]
+  },
+  options: { indexAxis: 'y', plugins: { legend: { display: false } } }
+});
+
+// Marketing table
+const mktBody = document.querySelector('#tableMarketing tbody');
+DATA.marketing.forEach(d => {
+  const badge = d.roas >= 1 ? 'good' : 'bad';
+  mktBody.innerHTML += `<tr><td>${d.channel}</td><td>${fmtMoney(d.spend)}</td><td>${fmtMoney(d.revenue)}</td><td><span class="badge ${badge}">${d.roas}x</span></td></tr>`;
+});
+
+// Tab navigation
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('page-' + btn.dataset.page).classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
